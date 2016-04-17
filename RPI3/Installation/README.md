@@ -50,46 +50,47 @@
 	- click Open
 
 ###12. In the SSH session
-	- enter **pi** as login ID
-	- enter **raspberry** as password
+	- enter pi as login ID
+	- enter raspberry as password
 	- find the available network names
 		sudo iwlist wlan0 scan | grep ESSID
 
-13. If MAC address based network security is required,
+###13. If MAC address based network security is required,
 	- add the WiFi MAC to the enabled list
 	- write down the network password
 
-14. Edit network setup file with nano editor
+###14. Edit network setup file with nano editor
 	- sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 	- on first line change country from GB to US (or whatever is your country ID)
 	- append the following lines
 
-network={
-    ssid="Selected network name"
-    psk="Network password"
-}
+		network={
+		    ssid="Selected network name"
+		    psk="Network password"
+		}
+
 	- WriteOut file with Ctrl-O
 	- Exit with Ctrl-X
 
-13. Shutdow RPI3 and prepare for WiFi
+###13. Shutdow RPI3 and prepare for WiFi
 	- sudo shutdown
 	- after 1 minute, when the shutdown is complete
 		disconnect Ethernet cable
 		disconne USB power source
 
-14. Reboot RPI13 by reconnecting USB power
+###14. Reboot RPI13 by reconnecting USB power
 
-15. Start Kitty and login
+###15. Start Kitty and login
 	- use the WiFi IP addres as the Host name
 	- login as pi with raspberry as password
 
-16. Install Remote Desktop, XDRP
+###16. Install Remote Desktop, XDRP
 	- sudo apt-get install xrdp
 	- confirm, with Y, that the additional space usage is OK
 	- this takes few minutes
 	- sudo reboot
 
-17. Start Remote Desktop Connection
+###17. Start Remote Desktop Connection
 	- enter WiFi IP address as Computer name
 	- confirm that you want to connect to an unidentified computer
 	- in the XRDP logon dialog,
@@ -104,23 +105,23 @@ network={
 		disconnect USB power source
 		move the CD card back to PC
 
-18. Make a backup copy of the image
+###18. Make a backup copy of the image
 	- Start Win32Diskimager
 	- Enter the image name, by browsing into target location
 	- Click Read button
 	- this takes several minutes
 
-19. Restart RPI
+###19. Restart RPI
 	- move the CD card back into RPI
 	- reconnect USB power
 	- open Remote Desktop Connection
 
-20. Download and install Geany editor
+###20. Download and install Geany editor
 	- open Terminal
 	- sudo apt-get install geany
 	- confirm that additional space usage is OK
 
-21. Start Geany for first Python program
+###21. Start Geany for first Python program
 	- open main menu (1st icon in menu bar)
 	- select programming
 	- select Geany
@@ -137,7 +138,7 @@ network={
 	- observe the text after the command
 		RPI3 greets the World
 
-22. Create Python program with physical I/O
+###22. Create Python program with physical I/O
 	- connect CanaKit Raspberry Pi GPIO Breakout Board or similar board to RPI3
 	- connect Canakit to a breadboard
 	- insert an infrared collision detection sensor or similar to breadboard
@@ -172,7 +173,7 @@ network={
 		 
 		GPIO.cleanup()				## Cleanup
 
-23. Run helloSensor.py
+###23. Run helloSensor.py
 	- python myPython/helloSensor
 	- activate the sensor with rapid moves
 	- observe the recorded sensor readings with 0.1 ms resolution
