@@ -6,6 +6,7 @@
 - Kitty terminal
 - XDRP remote desktop
 - Geany editor
+- Python Interpreter
 
 ###1. Download and install SD Formatter for Windows
 	- https://www.sdcard.org/downloads/formatter_4
@@ -22,35 +23,35 @@
 ###5. Download and install Win32 Disk Imager
 	- https://sourceforge.net/projects/win32diskimager/
 
-6. Run Win32Diskimager
+###6. Run Win32Diskimager
 	- Select the 2016-03-18-raspbian-jessie.img in download directory
 	- Select the drive with formatted Micro SD card
 	- Start imaging, this takes few minutes
 
-7. Download KiTTY telnet/SSH client
+###7. Download KiTTY telnet/SSH client
 	- http://www.9bis.net/kitty/
 
-8. Move kitty.exe from download folder to a more permanent folder
+###8. Move kitty.exe from download folder to a more permanent folder
 	- such as C:Users\<user>\Documents\LocalApps
 
-9. Prepare RPI3
+###9. Prepare RPI3
 	- move the SD card from PC into RPI3
 	- connect Ethernet cable to RPI3
 	- connect USB cable to RPI3 for power (5V 2A)
 
-10. Find the RPI3 IP and MAC address
+###10. Find the RPI3 IP and MAC address
 	- use a tool, such as Fing
 	- write them down, such as 
 		192.168.1.37 b8:27:eb:28:19:fc for wired connection
 		192.168.1.38 b8:27:eb:7d:4c:a9 for WiFi
 
-11. Start KiTTY
+###11. Start KiTTY
 	- enter the wired IP address as Host Name
 	- click Open
 
-12. In the SSH session
-	- enter pi as login ID
-	- enter raspberry as password
+###12. In the SSH session
+	- enter __pi__ as login ID
+	- enter __raspberry__ as password
 	- find the available network names
 		sudo iwlist wlan0 scan | grep ESSID
 
