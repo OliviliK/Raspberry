@@ -4,6 +4,7 @@
 - Raspbian Jessie
 - Win32 Disk Imager
 - Kitty terminal
+- Nano editor
 - XDRP remote desktop
 - Geany editor
 - Python Interpreter
