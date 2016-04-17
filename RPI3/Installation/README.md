@@ -1,18 +1,25 @@
 #Raspberry Pi 3 installation steps
+##Tools used
+- Micro SD Card formatter
+- Raspbian Jessie
+- Win32 Disk Imager
+- Kitty terminal
+- XDRP remote desktop
+- Geany editor
 
-##1. Download and install SD Formatter for Windows
+###1. Download and install SD Formatter for Windows
 	- https://www.sdcard.org/downloads/formatter_4
 
-2. Insert a 16 or 32 GB Micro SD card and format it with SDFormatter
+###2. Insert a 16 or 32 GB Micro SD card and format it with SDFormatter
 
-3. Download latest Raspbian Jessie, such as 2016-03-18-raspbian-jessie
+###3. Download latest Raspbian Jessie, such as 2016-03-18-raspbian-jessie
 	- https://www.raspberrypi.org/downloads/raspbian/
 
-4. Extract the 2016-03-18-raspbian-jessie.img by moving it out from
+###4. Extract the 2016-03-18-raspbian-jessie.img by moving it out from
 	- 2016-03-18-raspbian-jessie.zip
 	- in downloads directory
 
-5. Download and install Win32 Disk Imager
+###5. Download and install Win32 Disk Imager
 	- https://sourceforge.net/projects/win32diskimager/
 
 6. Run Win32Diskimager
