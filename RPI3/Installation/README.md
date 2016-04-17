@@ -50,8 +50,8 @@
 	- click Open
 
 ###12. In the SSH session
-	- enter __pi__ as login ID
-	- enter __raspberry__ as password
+	- enter **pi** as login ID
+	- enter **raspberry** as password
 	- find the available network names
 		sudo iwlist wlan0 scan | grep ESSID
 
